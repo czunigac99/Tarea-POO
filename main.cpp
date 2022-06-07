@@ -10,8 +10,8 @@ using namespace std;
 
 
 using std:: vector;
-//Seccion *objSeccion;
-Seccion *objSeccion= new Seccion("Programacion","666","1800","123","5");
+Seccion *objSeccion;
+//Seccion *objSeccion= new Seccion("Programacion","666","1800","123","5");
 string *Listado, *ptr;
 
 int main()
@@ -35,10 +35,17 @@ int main()
    objSeccion->setCupos(aumentarcupos(cupos,n));
 
 
-    objSeccion->Matricular("Pedro");
+  objSeccion = new Seccion("Programacion","666","1800","123","5");
+  objSeccion->Matricular("Pedro");
+
+
+
+  /* objSeccion->Matricular("Pedro");
     objSeccion->Matricular("Pablo");
     objSeccion->Matricular("Vilma");
     objSeccion->Matricular("casemiro");
+*/
+
 
 
     cout << objSeccion->getNombre();
