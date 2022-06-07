@@ -40,6 +40,7 @@ int main()
 
 
 
+
   /* objSeccion->Matricular("Pedro");
     objSeccion->Matricular("Pablo");
     objSeccion->Matricular("Vilma");
