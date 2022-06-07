@@ -6,7 +6,7 @@
 
 using namespace std;
 
-//void redimensionar(string *Alumnos,int &Cupos);
+
 
 
 using std:: vector;
@@ -16,7 +16,7 @@ string *Listado, *ptr;
 
 int main()
 {
-    cout<<objSeccion->getAula();
+
  int aumentarcupos(int cupos, int n);
 
   /*  objSeccion->setNombre("Programacion I");
@@ -47,16 +47,16 @@ int main()
   objSeccion->Matricular("casemiro");/*
 
 
- // objSeccion->setCupos(20);
+   objSeccion->setCupos(20);
 
 
   /* objSeccion->Matricular("Pedro");
     objSeccion->Matricular("Pablo");
     objSeccion->Matricular("Vilma");
     objSeccion->Matricular("casemiro");
+
 */
-
-
+    objSeccion->setCupos(20);
 
     cout << objSeccion->getNombre();
     Listado = objSeccion->Listado();
