@@ -40,6 +40,11 @@ int main()
 
   Seccion alumno2 = Seccion("Programacion","666","1800","123","5");// otra forma de crear un objeto
   objSeccion->Matricular("Pablo");
+  Seccion alumno3 = Seccion("Programacion","666","1800","123","5");// otra forma de crear un objeto
+  objSeccion->Matricular("Vilma");
+  Seccion alumno4 = Seccion("Programacion","666","1800","123","5");// otra forma de crear un objeto
+  objSeccion->Matricular("casemiro");
+
 
 
 
