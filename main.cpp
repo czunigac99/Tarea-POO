@@ -33,8 +33,11 @@ int main()
 
 
   objSeccion->setCupos(10);
+    objSeccion->Matricular("Pedro");
+    objSeccion->Matricular("Pablo");
+    objSeccion->Matricular("Vilma");
 
-
+/*
   objSeccion = new Seccion("Programacion","666","1800","123","5");// usar delete para borrar memoria
   objSeccion->Matricular("Pedro");
 
@@ -43,7 +46,7 @@ int main()
   Seccion alumno3 = Seccion("Programacion","666","1800","123","5");// otra forma de crear un objeto
   objSeccion->Matricular("Vilma");
   Seccion alumno4 = Seccion("Programacion","666","1800","123","5");// otra forma de crear un objeto
-  objSeccion->Matricular("casemiro");
+  objSeccion->Matricular("casemiro");/*
 
 
  // objSeccion->setCupos(20);
@@ -75,7 +78,7 @@ int main()
         cout << endl << *ptr;
         ptr++;
     }
-    delete objSeccion; // Libera la memoria
+
     return 0;
 }
 

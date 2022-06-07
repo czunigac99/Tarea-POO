@@ -22,13 +22,13 @@
 	<conio.h>
 	<stdlib.h>
 
-1654640860 source:c:\users\cris\documents\github\tarea-poo\seccion.cpp
+1654631882 source:c:\users\cris\documents\github\tarea-poo\seccion.cpp
 	"Seccion.h"
 
 1654622318 c:\users\cris\documents\github\tarea-poo\seccion.h
 	<iostream>
 
-1654576660 source:c:\users\cris\documents\github\tarea-poo\main.cpp
+1654631981 source:c:\users\cris\documents\github\tarea-poo\main.cpp
 	<iostream>
 	"Seccion.h"
 	<vector>

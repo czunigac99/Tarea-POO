@@ -11,7 +11,7 @@ Seccion::Seccion(string nombreseccion, string Aulaseccion, string Horasecccion, 
     this->Cupos=3;
     this->Alumnos= new string[Cupos];
 }
-//string *ptr = redimensionar(Alumno, Cupos, NewCupos);
+
 
 
 string *Seccion::Listado(){
@@ -41,9 +41,29 @@ string Seccion::getUV(){
 }
 
 void Seccion::setCupos(int Cupos){
+   if(this->Alumnos !NULL){
     this->Cupos= Cupos;
     this->Alumnos= new string[Cupos];
     this->Ultimo= -1;
+
+   }else {
+
+   string *ptrTemp;
+   ptrTemp = Alumnos;
+   Alumnos = new string [Cupos];
+    while (ptrTemp !=NULL){
+
+    this->Matricular(ptrTemp);
+    ptrTemp++;
+
+
+
+    }
+
+
+   }
+
+
 
 }
 
@@ -88,20 +108,4 @@ string Seccion::getID()
 {
     return this->ID;
 }
-/*string* redimensionar(string *Alumnos, int Cupos, int NewCupos)
-{
-    string *newAlumnos = new string[NewCupos];
 
-    for (int i = 0; i < NewCupos; i++)
-    {
-        if (Cupos <= i)
-            newAlumnos[i] = "vacio";
-        else
-            newAlumnos[i] = Alumnos[i];
-    }
-
-    delete[] Alumnos;
-
-    return newAlumnos;
-}
-*/
