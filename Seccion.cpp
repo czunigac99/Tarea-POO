@@ -2,13 +2,11 @@
 
 Seccion::Seccion(string nombreseccion, string Aulaseccion, string Horasecccion, string IDseccion, string Uvseccion){
 
-    Nombre=nombreseccion;
+     Nombre=nombreseccion;
      Aula=Aulaseccion;
      Hora=Horasecccion;
      ID=IDseccion;
      UV=Uvseccion;
-
-
 
     this->Cupos=3;
     this->Alumnos= new string[Cupos];

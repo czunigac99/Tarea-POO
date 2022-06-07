@@ -32,11 +32,14 @@ int main()
     cin>>n;
 
 
-   objSeccion->setCupos(aumentarcupos(cupos,n));
+  objSeccion->setCupos(aumentarcupos(cupos,n));
 
 
-  objSeccion = new Seccion("Programacion","666","1800","123","5");
+  objSeccion = new Seccion("Programacion","666","1800","123","5");// usar delete para borrar memoria
   objSeccion->Matricular("Pedro");
+
+  Seccion alumno2 = Seccion("Programacion","666","1800","123","5");// otra forma de crear un objeto
+  objSeccion->Matricular("Pablo");
 
 
 
