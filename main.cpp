@@ -27,9 +27,7 @@ int main()
     int cupos=3;
     int n;
 
-    cout<<"Ingrese nuevos cupos a agregar";
-    cout<<endl;
-    cin>>n;
+
 
 
   objSeccion->setCupos(10);
