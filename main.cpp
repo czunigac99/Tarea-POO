@@ -66,6 +66,7 @@ int main()
         cout << endl << *ptr;
         ptr++;
     }
+    delete objSeccion; // Libera la memoria
     return 0;
 }
 
