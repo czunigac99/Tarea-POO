@@ -1,18 +1,10 @@
 #include "Seccion.h"
 
-Seccion::Seccion(string nombreseccion, string Aulaseccion, string Horasecccion, string IDseccion, string Uvseccion){
-
-     Nombre=nombreseccion;
-     Aula=Aulaseccion;
-     Hora=Horasecccion;
-     ID=IDseccion;
-     UV=Uvseccion;
-
-    this->Cupos=3;
+Seccion::Seccion(int n){
+    this->Cupos= n;
     this->Alumnos= new string[Cupos];
+    this->Ultimo= -1;
 }
-
-
 
 string *Seccion::Listado(){
     return Alumnos;
@@ -20,7 +12,7 @@ string *Seccion::Listado(){
 
 bool Seccion::Matricular(string Alumno){
     if(Ultimo < (Cupos-1)){
-        Alumnos[++Ultimo]= Alumno;
+        this->Alumnos[++Ultimo]= Alumno;
         return true;
     }
     else{
@@ -41,30 +33,24 @@ string Seccion::getUV(){
 }
 
 void Seccion::setCupos(int Cupos){
-   if(this->Alumnos !NULL){
-    this->Cupos= Cupos;
-    this->Alumnos= new string[Cupos];
-    this->Ultimo= -1;
-
-   }else {
-
-   string *ptrTemp;
-   ptrTemp = Alumnos;
-   Alumnos = new string [Cupos];
-    while (ptrTemp !=NULL){
-
-    this->Matricular(ptrTemp);
-    ptrTemp++;
-
-
-
+    if (this->Alumnos == NULL){
+        this->Cupos= Cupos;
+        this->Alumnos= new string[Cupos];
+        this->Ultimo= -1;
     }
-
-
-   }
-
-
-
+    else{
+        string *ptrTemp;
+        ptrTemp= Alumnos;
+        this->Cupos= Cupos;
+        Alumnos= new string[Cupos];
+        int i= Ultimo;
+        Ultimo= -1;
+        for(i; i >= 0; i--){
+            this->Matricular(*ptrTemp);
+            ptrTemp++;
+        }
+        delete(ptrTemp);
+    }
 }
 
 int Seccion::getCupos(){
@@ -108,4 +94,3 @@ string Seccion::getID()
 {
     return this->ID;
 }
-

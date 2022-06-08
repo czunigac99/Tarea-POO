@@ -17,17 +17,7 @@ private:
     string *Alumnos;
 
 public:
-    Seccion(string nombreseccion, string Aulaseccion, string Horasecccion, string IDseccion, string Uvseccion);
-
-    /* Nombre=nombreseccion;
-     Aula=Aulaseccion;
-     Hora=Horasecccion;
-     ID=IDseccion;
-     UV=Uvseccion;*/
-
-
-
-
+    Seccion(int );
 
     void setNombre(string Nombre);
     string getNombre();

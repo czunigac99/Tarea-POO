@@ -1,37 +1,11 @@
 # depslib dependency file v1.0
-1654302270 source:c:\users\migsauceda\documents\miguel\poo_ejemplos\registro\main.cpp
+1654571493 source:c:\users\migsauceda\documents\miguel\poo_ejemplos\registro\main.cpp
 	<iostream>
 	"Seccion.h"
 
-1654233108 source:c:\users\migsauceda\documents\miguel\poo_ejemplos\registro\seccion.cpp
+1654571400 source:c:\users\migsauceda\documents\miguel\poo_ejemplos\registro\seccion.cpp
 	"Seccion.h"
 
-1654232851 c:\users\migsauceda\documents\miguel\poo_ejemplos\registro\seccion.h
+1654570498 c:\users\migsauceda\documents\miguel\poo_ejemplos\registro\seccion.h
 	<iostream>
-
-1654622362 source:c:\users\cris\desktop\registro\registro\seccion.cpp
-	"Seccion.h"
-
-1654622318 c:\users\cris\desktop\registro\registro\seccion.h
-	<iostream>
-
-1654620593 source:c:\users\cris\desktop\registro\registro\main.cpp
-	<iostream>
-	"Seccion.h"
-	<vector>
-	<conio.h>
-	<stdlib.h>
-
-1654631882 source:c:\users\cris\documents\github\tarea-poo\seccion.cpp
-	"Seccion.h"
-
-1654622318 c:\users\cris\documents\github\tarea-poo\seccion.h
-	<iostream>
-
-1654633033 source:c:\users\cris\documents\github\tarea-poo\main.cpp
-	<iostream>
-	"Seccion.h"
-	<vector>
-	<conio.h>
-	<stdlib.h>
 
