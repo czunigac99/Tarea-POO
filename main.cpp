@@ -32,7 +32,7 @@ int main()
     cin>>n;
 
 
-  objSeccion->setCupos(aumentarcupos(cupos,n));
+  objSeccion->setCupos(10);
 
 
   objSeccion = new Seccion("Programacion","666","1800","123","5");// usar delete para borrar memoria
@@ -46,7 +46,7 @@ int main()
   objSeccion->Matricular("casemiro");
 
 
-
+ // objSeccion->setCupos(20);
 
 
   /* objSeccion->Matricular("Pedro");
@@ -79,14 +79,14 @@ int main()
     return 0;
 }
 
-int aumentarcupos(int cupos , int n){
+/*int aumentarcupos(int cupos , int n){
 
 int nuevoscupos= cupos+n;
 
 return nuevoscupos;
 
 
-}
+}*/
 /*void redimensionar(int *Alumnos, int &Cupos)//
 {
 
